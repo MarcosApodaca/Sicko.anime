@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body{
+    background: #141414;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header { 
+    padding: 30px 0px;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Bebas Neue', cursive;
+    color: #E50914;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.contenedor_barra a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+.contenedor_barra a:hover,
+.contenedor_barra .activo {
+    color: #fff;
+    transition: .4;
+}
+
+/* ----- ----- ----- pelicula principal ---- ---- ------ */
+
+.contenido-principal {
+    width: 50%;
+    padding: 0px 20px;
+    margin: 0 auto ;
+}
+
+.contenido-principal_sinopsis{
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 0, 0, 0.158);
+    border-radius: 10px;
+}
+
+.sinopsis_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: auto;
+
+}
+.sinopsis_img img{
+    width: 250px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+
+.sinopsis_titulo h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 40px;
+
+ }
+
+.sinopsis_titulo{
+ margin-left: 70px;
+}
+
+.sinopsis_titulo img{
+    width: 250px;
+    height: 100px;
+}
+
+.sinopsis_lista{
+    color: #AAA;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+ .sinopsis_descripcion h5{
+    color: #AAA;
+    font-size: 15px;
+}
+
+/* ----- ----- ----- capitulos ---- ---- ------ */
+
+.contenido-principal_capitulos h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #fff
+}
+
+.contenido-principal_capitulos h2 i{
+    margin: 10px;
+    color: #f8303a;
+}
+
+.capitulos_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.capitulos_img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.capitulos_img img:hover{
+    cursor: pointer;
+    filter: opacity(.5);
+    -webkit-transform:scale(0.9);transform:scale(0.9);
+}

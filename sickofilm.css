@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body{
+    background: #141414;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: #141414;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header { 
+    padding: 30px 0px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 8%;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Bebas Neue', cursive;
+    color: #E50914;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.contenedor_barra a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+.contenedor_barra a:hover,
+.contenedor_barra .activo {
+    color: #fff;
+    transition: .4;
+}
+
+
+/* ----- ----- ----- pelicula principal ---- ---- ------ */
+
+.anime-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%);
+    background-attachment: fixed;
+    background-position-y: 290%;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+    
+
+}
+
+.video{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.anime-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+    z-index: 2;
+}
+
+.anime-principal .titulo{
+    font-size: 3.12em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+.contenedor p{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.anime-principal .boton {
+    background: rgba(0, 0, 0, .50);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.anime-principal .boton:hover{
+    background: #fff;
+    color: #000;
+}
+
+.anime-principal .boton i {
+    margin-right: 1.25em;
+}
+
+.subtitulo{
+    color: #fff;
+    margin-left: 43.68px;
+}
+
+.contenedor-main{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 0;
+}
+
+.recomendados {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 15px;
+}
+
+
+.recomendados_anime {
+    width: 20%;
+    height: 25%;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow:hidden;
+}
+
+.recomendados_anime img{
+    width: 210px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.recomendados_anime:hover img{
+    cursor: pointer;
+    filter: opacity(.5);
+    -webkit-transform:scale(0.9);transform:scale(0.9);
+}
+
+@keyframes animacion {
+    0%{
+        left: 0;
+    }  
+    100%{
+        left: 80%;
+        background-color: #141414;
+    }  
+}
+.recomendados_anime img{
+    background-color: rgba(46, 2, 2, 0.5);
+    transition: 0.4 ease;
+}
+
+.recomendados_anime h5{
+    color: #fff;
+    margin-right: 30px;
+    font-size: 15px;
+
+}
+
+.recomendados_titulo{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    top: 5px;
+    position: relative;
+}
+
+.recomendados_titulo h5 a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 0.83em;
+    padding-bottom: 15px;
+    margin-right: 25px;
+    display: block;
+    text-align: left;
+}
+
+
+
+
+/*----- media ------ */
+
+@media screen and (max-width: 800px) {
+    header .logo{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    header .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .anime-principal {
+        font-size: 14px;
+    }
+
+    .contenedor p{
+        max-width: 100%;
+    }
+}
+
+

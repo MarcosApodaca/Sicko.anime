@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #141414;;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    padding: 30px 0px;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Bebas Neue', cursive;
+    color: #E50914;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.contenedor_barra a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+.contenedor_barra a:hover {
+    color: #fff;
+    transition: .4;
+}
+
+/* ----- ----- ----- anime ---- ---- ------ */
+
+.contenedor-main{
+    width: 50%;
+    padding: 0px 15px;
+    margin: 0 auto ;
+}
+
+.contenedor-main_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-main_titulo {
+    color: #fff;
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icon_1 i{
+ background: transparent;
+ size: 40px;
+ padding: 3px;
+ color: #fff;
+}
+
+.icon_1 button{
+    background-color: transparent;
+    color: #fff;
+    border-color: transparent;
+    cursor: pointer;
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.barra-reproducion{
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #AAA;
+    border-radius: 10px;
+}
+
+
+.barra-reproducin_row{
+    display: flex;
+    display: inline;
+
+}
+
+.barra-reproducion_contenido{
+    display:inline-block;
+}
+
+.barra-reproducion_contenido h5{
+    color: #fff;
+    font-size: 15px;
+}
+
+.barra-reproducion_boton button{
+    background-color:  rgba(0, 0, 0, .50);
+    padding: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+}
+
+.barra-reproducion_boton button:hover{
+    background-color: transparent;
+    transition: 0.7s;
+}
+

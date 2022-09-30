@@ -13,6 +13,16 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color:#AAA;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, .50);
+    border-radius: 10px;
+}
+
 header{
     background: #141414;
 }
@@ -23,11 +33,10 @@ header{
 }
 
 header { 
-    padding: 30px 0px;
+    padding: 10px 0px;
     position: fixed;
     z-index: 100;
     width: 100%;
-    height: 8%;
 }
 
 header .contenedor{
@@ -130,28 +139,23 @@ header .logo {
 }
 
 .contenedor-main{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 0;
+    padding: 100px;
 }
 
 .recomendados {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: 15px;
+    padding: 0px;
+    align-items: center;
 }
 
 
 .recomendados_anime {
-    width: 20%;
+    width: 15%;
     height: 25%;
-    padding: 10px;
-    margin-bottom: 30px;
+    padding: 0px;
     overflow:hidden;
+
 }
 
 .recomendados_anime img{
@@ -160,16 +164,19 @@ header .logo {
     border-radius: 10px;
 }
 
-.recomendados_anime:hover img{
+.recomendados_anime img:hover{
     cursor: pointer;
-    filter: opacity(.5);
-    -webkit-transform:scale(0.9);transform:scale(0.9);
+    /* filter: opacity(.5);
+    -webkit-transform:scale(0.9);transform:scale(0.9); */
+    animation: animacion .5s ease-in-out;
 }
 
 @keyframes animacion {
     0%{
-        left: 0;
-    }  
+        transform: translate(-30%, 0%)
+    }
+    
+    
     100%{
         left: 80%;
         background-color: #141414;

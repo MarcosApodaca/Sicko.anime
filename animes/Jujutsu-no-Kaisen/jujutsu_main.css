@@ -45,7 +45,7 @@ header .logo {
 /* ----- ----- ----- anime principal ---- ---- ------ */
 
 .contenido-principal {
-    width: 50%;
+    width: 65%;
     padding: 0px 20px;
     margin: 0 auto ;
 }
@@ -123,6 +123,24 @@ header .logo {
     margin: 15px;
     border-radius: 10px;
     padding: 5px;
+    margin-bottom: 0px;
+}
+
+
+.capitulos_img-item ul li{
+    display: block;
+    top: 100%;
+}
+
+.capitulos_img-item ul li::before{
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 40 px;
+    margin-top: 40px;
+    background-color: #AAA;
+    border-radius: 10px;
+
 }
 
 .capitulos_img img:hover{

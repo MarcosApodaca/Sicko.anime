@@ -21,6 +21,7 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, .50);
     border-radius: 10px;
+    height: 1px;
 }
 
 header{
@@ -166,12 +167,13 @@ header .logo {
 
 .recomendados_anime img:hover{
     cursor: pointer;
-    /* filter: opacity(.5);
-    -webkit-transform:scale(0.9);transform:scale(0.9); */
-    animation: animacion .5s ease-in-out;
+    filter: opacity(.5);
+    -webkit-transform:scale(0.9);transform:scale(0.9); 
+    transition: 0.2s ease-in-out;
+    /* animation: animacion .5s ease-in-out; */
 }
 
-@keyframes animacion {
+/* @keyframes animacion {
     0%{
         transform: translate(-30%, 0%)
     }
@@ -180,8 +182,8 @@ header .logo {
     100%{
         left: 80%;
         background-color: #141414;
-    }  
-}
+    }
+}*/
 .recomendados_anime img{
     background-color: rgba(46, 2, 2, 0.5);
     transition: 0.4 ease;
